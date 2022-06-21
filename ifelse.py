@@ -12,3 +12,10 @@ elif 60 <= score < 70:
 print("등급은 ", grade)
 
 
+
+
+
+list(range(10))
+list(range(5,10))
+list(range(10,0,-1))
+list(range(10,20,2))
