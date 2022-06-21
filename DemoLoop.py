@@ -36,3 +36,10 @@ print(years)
 days = list(range(1,32))
 print(days)
 
+# 리스트 컴프리헨션(리스트 임베딩)
+lst = list(range(1,11))
+print(i**2 for i in lst if i > 5)
+
+# Tuple에 담은 데이터
+tp = ("apple", "orange", "kiwi")
+print([len(i) for i in tp])
