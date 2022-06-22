@@ -13,7 +13,7 @@ def divide(a,b):
 # 에러 처리
 try :
     # 함수 호출
-    result = divide(5,0)
+    result = divide(5,2)
     print("결과:{0}".format(result))
 except ZeroDivisionError:
     print("0으로 나누면 안됩니다.")
@@ -22,4 +22,7 @@ except TypeError:
 else:
     print("결과:{0}".format(result))
 finally:
-    print("무조건 실행(한번 더 체크")
+    print("무조건 실행(한번 더 체크)")
+
+print("---전체코드 실행 종료---")
+
