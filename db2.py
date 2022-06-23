@@ -1,8 +1,12 @@
-# db1.py
+# db2.py
 import sqlite3
 
 # 연결 객체를 리턴받기 (일단 메모리에서 연습. 속도)
-con = sqlite3.connect(":memory:")
+# con = sqlite3.connect("c:\\work\\test.db")
+# db1을 메모리에 임시저장한 것과 다르게 이건 로컬 파일에 저장
+# 연결 객체를 리턴받기 (파일에 영구저장( con.commit()수행 버전))
+con = sqlite3.connect("c:\\work\\sample.db")
+
 # 커서 객체를 리턴받기
 cur = con.cursor()
 # 테이블(스키마)를 생성
@@ -45,3 +49,7 @@ print(cur.fetchall())
 print("데이터 재로드")
 cur.execute("select * from PhoneBook;")
 print(cur.fetchall())
+# 커밋을 안하면 롤백, 두 번 런하면 테이블 더블 생성 안된다고 에러 뜸
+
+# 작업을 정상적으로 완료
+con.commit()
