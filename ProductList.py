@@ -14,6 +14,8 @@ else:
     cur = con.cursor()
     cur.execute(
         "create table Products (id integer primary key autoincrement, Name text, Price integer);")
+# ^ CRUD 메서드(create, read, update, delete)
+
 
 #디자인 파일을 로딩
 form_class = uic.loadUiType("c:\\work\\ProductList.ui")[0]

@@ -38,8 +38,9 @@ class DemoWindow(QMainWindow):
             msg += "윈도우폰 "
         self.statusBar.showMessage(msg)
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    demoWindow = DemoWindow()
-    demoWindow.show()
-    app.exec_()
+# if __name__ == "__main__": 
+# 위에거 쓰려면 아래 app ~ app indent
+app = QApplication(sys.argv)
+demoWindow = DemoWindow()
+demoWindow.show()
+app.exec_()

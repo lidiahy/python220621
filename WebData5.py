@@ -28,7 +28,7 @@ class Form(QMainWindow):
         self.tableWidget.resize(800, 600)
         self.tableWidget.setRowCount(50)  #행의 갯수 
         self.tableWidget.setColumnCount(2)  #컬럼의 갯수 
-        #컬럼의 폭을 지정한다. 0번 1번 
+        #컬럼의 폭을 지정한다. 0번 1번 (나타나기는 1열 2열로 나타남)
         self.tableWidget.setColumnWidth(0, 300)
         self.tableWidget.setColumnWidth(1, 300)
         
